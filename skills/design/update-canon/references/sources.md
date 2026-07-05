@@ -3,7 +3,7 @@
 
 | Source | URL | What it covers | Feeds |
 |---|---|---|---|
-| NN/g articles feed | https://www.nngroup.com/articles/ | Evidence-based UX; annual State of UX | modern-ux.md |
+| NN/g articles feed | https://www.nngroup.com/articles/ | Evidence-based UX; annual State of UX; UX writing | modern-ux.md + copy-canon.md |
 | NN/g AI topic hub | https://www.nngroup.com/topic/ai/ | AI-UX patterns, agent UX research | modern-ux.md |
 | Smashing UX category | https://www.smashingmagazine.com/category/ux/ | Practitioner trends, accessibility ops | modern-ux.md |
 | web.dev blog + patterns | https://web.dev/blog/ and https://web.dev/patterns/ | Core Web Vitals changes, UX patterns | modern-ux.md |
@@ -12,7 +12,7 @@
 | Android Developers Blog (design tag) | https://android-developers.googleblog.com/ | M3 Expressive rollouts | ui-canon.md |
 | Apple HIG | https://developer.apple.com/design/human-interface-guidelines/ | Liquid Glass, platform norms | ui-canon.md |
 | Apple WWDC design sessions | https://developer.apple.com/videos/design/ | Annual design-language updates | ui-canon.md |
-| W3C WCAG overview | https://www.w3.org/WAI/standards-guidelines/wcag/ | WCAG 2.2 → 3.0 progress | flow-canon.md + ui-canon.md |
+| W3C WCAG overview | https://www.w3.org/WAI/standards-guidelines/wcag/ | WCAG 2.2 → 3.0 progress | flow-canon.md + ui-canon.md + copy-canon.md |
 | EU Commission EAA page | https://commission.europa.eu/strategy-and-policy/policies/justice-and-fundamental-rights/disability/european-accessibility-act-eaa_en | Enforcement scope | modern-ux.md |
 | Shape of AI | https://www.shapeof.ai/ | Named AI-UX pattern library | modern-ux.md |
 | aiverse.design | https://www.aiverse.design/ | AI product design playbook | modern-ux.md |
