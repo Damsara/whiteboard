@@ -1,5 +1,13 @@
 # whiteboard-skills
 
+## 0.3.0
+
+### Minor Changes
+
+- [#5](https://github.com/Damsara/whiteboard/pull/5) [`f408f2e`](https://github.com/Damsara/whiteboard/commit/f408f2eab54d5ff19121d54214cc991edc4d96cb) Thanks [@Damsara](https://github.com/Damsara)! - Add the **`setup-whiteboard`** skill — lean one-time per-repo configuration: docs home, platform targets, WCAG target, and the token source of truth, written to `docs/design/whiteboard-setup.md`. Every discipline now reads the setup file when present; all defaults survive without it, so setup stays optional.
+
+- [#5](https://github.com/Damsara/whiteboard/pull/5) [`f408f2e`](https://github.com/Damsara/whiteboard/commit/f408f2eab54d5ff19121d54214cc991edc4d96cb) Thanks [@Damsara](https://github.com/Damsara)! - Add the **`token-drift`** skill — a design-system violation scanner. Establishes the token truth by cascade (brief token table → codebase token config → refuse and run `ui-craft`), then sweeps for raw color literals, off-scale spacing, rogue type, one-off radii/shadows, unpaired dark mode, and hand-rolled states. Reports `file:line | current | nearest token | rule` and applies fixes only on approval. Requires `ui-craft` installed.
+
 ## 0.2.0
 
 ### Minor Changes
