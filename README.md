@@ -32,6 +32,7 @@ Twenty minutes of this, and the brief that comes out the other end has your flow
 - **[/whiteboard-flow](./skills/design/whiteboard-flow/SKILL.md)** — flow only: screens, steps, states, errors.
 - **[/whiteboard-ui](./skills/design/whiteboard-ui/SKILL.md)** — visual direction only: hierarchy, spacing, type, color tokens.
 - **[/update-canon](./skills/design/update-canon/SKILL.md)** — maintainer tool: refresh the distilled canon from its vetted sources.
+- **[/setup-whiteboard](./skills/design/setup-whiteboard/SKILL.md)** — optional one-time repo config: docs home, platforms, WCAG target, token source.
 
 ## Model-invoked skills
 
@@ -39,6 +40,7 @@ Twenty minutes of this, and the brief that comes out the other end has your flow
 - **[ui-craft](./skills/design/ui-craft/SKILL.md)** — the visual-direction discipline. Triggers when you're styling UI without an agreed system.
 - **[design-review](./skills/design/design-review/SKILL.md)** — the retrospective counterpart: a principles-cited audit of existing UI, from excise hunt to the WCAG hard-gates table, with severity-ranked findings. Requires `ux-flow` and `ui-craft` installed — it reads their canon.
 - **[copy-craft](./skills/design/copy-craft/SKILL.md)** — microcopy interrogation: labels, errors, empty states, and confirmations rewritten against a cited UX-writing canon.
+- **[token-drift](./skills/design/token-drift/SKILL.md)** — design-system violation scanner: raw hex, off-scale spacing, rogue radii and shadows, reported against the repo's locked token truth. Requires `ui-craft` installed.
 
 ## Where the questions come from
 
