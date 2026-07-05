@@ -5,8 +5,8 @@ Skills live under `skills/design/<name>/SKILL.md` (+ `references/` where the ski
 ## Skill rules
 
 - Every `SKILL.md` has `name` (lowercase-hyphen, matching its folder) and a single-line `description` under 1536 chars.
-- **Disciplines** (`ux-flow`, `ui-craft`, `design-review`, `copy-craft`) are model-invoked: no `disable-model-invocation`; the description is a routing rule with trigger phrases, one trigger per genuinely distinct branch.
-- **Wrappers** (`whiteboard-*`) and `update-canon` are user-invoked: `disable-model-invocation: true`, human-facing one-line description, body ≤ 10 lines of pure orchestration. A wrapper that grows content is a bug — move the content into the discipline it wraps.
+- **Disciplines** (`ux-flow`, `ui-craft`, `design-review`, `copy-craft`, `token-drift`) are model-invoked: no `disable-model-invocation`; the description is a routing rule with trigger phrases, one trigger per genuinely distinct branch.
+- **Wrappers** (`whiteboard-*`) and **tools** (`update-canon`, `setup-whiteboard`) are user-invoked: `disable-model-invocation: true`, human-facing one-line description. Wrapper bodies are ≤ 10 lines of pure orchestration — a wrapper that grows content is a bug; move the content into the discipline it wraps.
 - Which brief sections each session type writes, and where briefs are saved, is defined once — in the Design Brief Format in `ux-flow/references/flow-canon.md`. Wrappers and Exit sections point there; they never restate section numbers or paths.
 
 ## Canon rules

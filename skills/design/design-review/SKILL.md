@@ -5,7 +5,7 @@ description: Audit an existing screen, flow, or component against the whiteboard
 
 # Design Review
 
-The retrospective counterpart to `ux-flow` and `ui-craft`: those interrogate before anything is built; this audits what already exists. Requires both installed — read `../ux-flow/references/flow-canon.md`, `../ux-flow/references/modern-ux.md`, and `../ui-craft/references/ui-canon.md` in full before auditing.
+The retrospective counterpart to `ux-flow` and `ui-craft`: those interrogate before anything is built; this audits what already exists. Requires both installed — read `../ux-flow/references/flow-canon.md`, `../ux-flow/references/modern-ux.md`, and `../ui-craft/references/ui-canon.md` in full before auditing. If `docs/design/whiteboard-setup.md` exists, read it too.
 
 ## Scope first
 
