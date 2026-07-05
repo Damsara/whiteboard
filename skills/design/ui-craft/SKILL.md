@@ -5,7 +5,7 @@ description: Interrogate the user about visual direction, then lock a clean UI s
 
 # UI Craft Interrogation
 
-Read `references/ui-canon.md` in full before asking anything.
+Read `references/ui-canon.md` in full before asking anything. If `docs/design/whiteboard-setup.md` exists, read it too.
 
 ## Grill rules
 

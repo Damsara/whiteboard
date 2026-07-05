@@ -5,7 +5,7 @@ description: Interrogate the user about a product or feature's UX flow before an
 
 # UX Flow Interrogation
 
-Read `references/flow-canon.md` and `references/modern-ux.md` in full before asking anything.
+Read `references/flow-canon.md` and `references/modern-ux.md` in full before asking anything. If `docs/design/whiteboard-setup.md` exists, read it too.
 
 ## Grill rules
 

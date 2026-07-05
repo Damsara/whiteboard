@@ -5,7 +5,7 @@ description: Interrogate and rewrite a surface's microcopy — labels, buttons, 
 
 # Copy Craft Interrogation
 
-Read `references/copy-canon.md` in full before touching any copy.
+Read `references/copy-canon.md` in full before touching any copy. If `docs/design/whiteboard-setup.md` exists, read it too.
 
 ## Grill rules
 

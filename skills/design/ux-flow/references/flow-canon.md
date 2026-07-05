@@ -87,7 +87,7 @@
 - **Mandatory ethics check** — before shipping a retention loop, ask: "would the user consent to this loop if they saw it?" If the honest answer is no, redesign it.
 
 ## Design Brief Format
-Write briefs to `docs/design/<feature>-brief.md` with exactly these sections:
+Write briefs to `docs/design/<feature>-brief.md` (or the Docs home set in `docs/design/whiteboard-setup.md`) with exactly these sections:
 1. **Goal & primary persona** — one paragraph each.
 2. **Flow map** — a mermaid flowchart of steps and decision points.
 3. **Screen & state inventory** — table: screen × {empty, loading, error, success}, one-line behavior each.
