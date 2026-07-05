@@ -9,7 +9,7 @@ Read `references/flow-canon.md` and `references/modern-ux.md` in full before ask
 
 ## Grill rules
 
-- One question at a time. Wait for the answer before continuing — multiple questions at once are bewildering.
+- One question at a time; wait for the answer before continuing.
 - Every question ships with your recommended answer.
 - Every question and recommendation names the principle it derives from, inline (e.g. "— Tesler's Law", "— WCAG 3.3.7 Redundant Entry", "— Cooper: excise").
 - If the codebase or existing product can answer a question, explore it instead of asking.
@@ -31,4 +31,4 @@ Walk in order. Skip any rung the user has already answered; never skip the fewes
 
 ## Exit
 
-Restate the agreed flow as a numbered step list with states per step and get explicit confirmation. In a full `/whiteboard-me` session, hand off to a `ui-craft` session next; in a flow-only session, write brief sections 1–3 and 5–7 per the Design Brief Format in `references/flow-canon.md`.
+Restate the agreed flow as a numbered step list with states per step and get explicit confirmation. In a full `/whiteboard-me` session, hand off to a `ui-craft` session next; in a flow-only session, write the flow-only brief per the Design Brief Format in `references/flow-canon.md`.

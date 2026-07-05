@@ -27,4 +27,4 @@ Same as a `ux-flow` session: one question at a time, each with a recommended ans
 
 ## Exit
 
-Restate the locked system as a token decision table (role → light value → dark value; scales as lists) plus the one distinctive move, and get explicit confirmation. In a full `/whiteboard-me` session, proceed to the brief; in a UI-only session, write brief sections 4–7 per the Design Brief Format in `ux-flow/references/flow-canon.md`.
+Restate the locked system as a token decision table (role → light value → dark value; scales as lists) plus the one distinctive move, and get explicit confirmation. In a full `/whiteboard-me` session, proceed to the brief; in a UI-only session, write the UI-only brief per the Design Brief Format in `ux-flow/references/flow-canon.md`.
