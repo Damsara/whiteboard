@@ -28,6 +28,7 @@ Twenty minutes of this, and the brief that comes out the other end has your flow
 
 ## User-invoked skills
 
+- **[/ask-whiteboard](./skills/design/ask-whiteboard/SKILL.md)** — not sure which skill fits? The router: asks where you are, points you at the right session.
 - **[/whiteboard-me](./skills/design/whiteboard-me/SKILL.md)** — the full kickoff: UX-flow interrogation, then visual direction, then the design brief.
 - **[/whiteboard-flow](./skills/design/whiteboard-flow/SKILL.md)** — flow only: screens, steps, states, errors.
 - **[/whiteboard-ui](./skills/design/whiteboard-ui/SKILL.md)** — visual direction only: hierarchy, spacing, type, color tokens.
