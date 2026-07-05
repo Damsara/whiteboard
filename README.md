@@ -1,5 +1,7 @@
 # whiteboard
 
+[![skills.sh](https://skills.sh/b/Damsara/whiteboard)](https://skills.sh/Damsara/whiteboard)
+
 ```bash
 npx skills@latest add Damsara/whiteboard
 ```
@@ -26,15 +28,17 @@ Twenty minutes of this, and the brief that comes out the other end has your flow
 
 ## User-invoked skills
 
-- **/whiteboard-me** — the full kickoff: UX-flow interrogation, then visual direction, then the design brief.
-- **/whiteboard-flow** — flow only: screens, steps, states, errors.
-- **/whiteboard-ui** — visual direction only: hierarchy, spacing, type, color tokens.
-- **/update-canon** — maintainer tool: refresh the distilled canon from its vetted sources.
+- **[/whiteboard-me](./skills/design/whiteboard-me/SKILL.md)** — the full kickoff: UX-flow interrogation, then visual direction, then the design brief.
+- **[/whiteboard-flow](./skills/design/whiteboard-flow/SKILL.md)** — flow only: screens, steps, states, errors.
+- **[/whiteboard-ui](./skills/design/whiteboard-ui/SKILL.md)** — visual direction only: hierarchy, spacing, type, color tokens.
+- **[/update-canon](./skills/design/update-canon/SKILL.md)** — maintainer tool: refresh the distilled canon from its vetted sources.
 
 ## Model-invoked skills
 
-- **ux-flow** — the flow-interrogation discipline. Triggers when you start designing a feature or are about to generate UI without an agreed flow.
-- **ui-craft** — the visual-direction discipline. Triggers when you're styling UI without an agreed system.
+- **[ux-flow](./skills/design/ux-flow/SKILL.md)** — the flow-interrogation discipline. Triggers when you start designing a feature or are about to generate UI without an agreed flow.
+- **[ui-craft](./skills/design/ui-craft/SKILL.md)** — the visual-direction discipline. Triggers when you're styling UI without an agreed system.
+- **[design-review](./skills/design/design-review/SKILL.md)** — the retrospective counterpart: a principles-cited audit of existing UI, from excise hunt to the WCAG hard-gates table, with severity-ranked findings. Requires `ux-flow` and `ui-craft` installed — it reads their canon.
+- **[copy-craft](./skills/design/copy-craft/SKILL.md)** — microcopy interrogation: labels, errors, empty states, and confirmations rewritten against a cited UX-writing canon.
 
 ## Where the questions come from
 
@@ -48,7 +52,7 @@ Norman — *The Design of Everyday Things* · Nielsen — *10 Usability Heuristi
 
 ## Staying current
 
-Design principles evolve; skill files don't — unless you refresh them. The distilled canon carries a `canon-version` stamp, and `/update-canon` re-checks a vetted source list (NN/g, W3C, Apple, Google, web.dev, Shape of AI, Growth.Design), proposes a diff, and re-stamps the files. We run it periodically and commit; you get updates with:
+Design principles evolve; skill files don't — unless you refresh them. The distilled canon carries a `canon-version` stamp, and `/update-canon` re-checks a vetted source list (NN/g, W3C, Apple, Google, web.dev, Shape of AI, Growth.Design), proposes a diff, and re-stamps the files. We run it periodically and commit; every release is documented in [`CHANGELOG.md`](./CHANGELOG.md) and published as a GitHub release. You get updates with:
 
 ```bash
 npx skills update
