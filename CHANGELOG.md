@@ -1,5 +1,11 @@
 # whiteboard-skills
 
+## 0.4.0
+
+### Minor Changes
+
+- [#7](https://github.com/Damsara/whiteboard/pull/7) [`3e208cd`](https://github.com/Damsara/whiteboard/commit/3e208cd7025c2d302d466d699bb56dddcacc9248) Thanks [@Damsara](https://github.com/Damsara)! - Add the **`ask-whiteboard`** skill — a router over the whole catalog. Places you on a map (building new → kickoff skills; something feels wrong → the audit skills; housekeeping → setup/canon), asks at most two placement questions, and disambiguates the confusable pairs (`design-review` vs `token-drift`, `whiteboard-ui` vs `token-drift`). Names exactly one skill and offers to run it.
+
 ## 0.3.0
 
 ### Minor Changes
