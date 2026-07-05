@@ -25,7 +25,7 @@ Skills live under `skills/design/<name>/SKILL.md` (+ `references/` where the ski
 
 ## Sync rules
 
-- Every promoted skill has a linked entry in the top-level `README.md`, grouped under User-invoked / Model-invoked, kept current on add/rename/remove.
+- Every promoted skill has a linked entry in the top-level `README.md`'s "Which skill do I use?" tables, grouped by situation (starting new / something feels wrong / utilities), kept current on add/rename/remove. Typed skills carry the `/` prefix; auto-firing ones don't.
 - `ask-whiteboard` is the router over every skill. Whenever a skill is added, renamed, removed, or changes what it's for, re-sync the router's map — a router that lies is worse than none.
 - Every behaviour-changing branch adds a changeset (`npx changeset`; package `whiteboard-skills`): patch = wording/pruning, minor = new skill or new rung, major = removed or renamed skill.
 - Releasing: `GITHUB_TOKEN=$(gh auth token) npx changeset version`, commit, `git tag v<version>`, `gh release create v<version>` with the new CHANGELOG section as notes. Installed users then pick up the release via `npx skills update`.
