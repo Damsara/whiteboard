@@ -1,5 +1,17 @@
 # whiteboard-skills
 
+## 0.2.0
+
+### Minor Changes
+
+- [#3](https://github.com/Damsara/whiteboard/pull/3) [`673eca9`](https://github.com/Damsara/whiteboard/commit/673eca960f78b0434caf3217e1c69ed33f9c58eb) Thanks [@Damsara](https://github.com/Damsara)! - Add the **`copy-craft`** skill — a microcopy interrogation discipline with its own distilled UX-writing canon (`references/copy-canon.md`): voice, verbs-as-buttons, error anatomy (what happened → why → fix), state copy, consequence-stating confirmations, a Krug word-count pass, and a WCAG copy-gates table. Exits with a full surface | current | proposed | principle table.
+
+- [#3](https://github.com/Damsara/whiteboard/pull/3) [`673eca9`](https://github.com/Damsara/whiteboard/commit/673eca960f78b0434caf3217e1c69ed33f9c58eb) Thanks [@Damsara](https://github.com/Damsara)! - Add the **`design-review`** skill — the retrospective counterpart to `ux-flow`/`ui-craft`. A principles-cited heuristic audit of existing UI: flow and excise sweep, four-states check, hierarchy and token discipline, the WCAG 2.2 hard-gates table with explicit verdicts, and severity-ranked findings (blocker/major/minor/polish), written to `docs/design/<surface>-review.md`. Requires `ux-flow` and `ui-craft` installed — it reads their canon.
+
+### Patch Changes
+
+- [#1](https://github.com/Damsara/whiteboard/pull/1) [`98ae10d`](https://github.com/Damsara/whiteboard/commit/98ae10dbe098cf2b57063993864e844cfb6061c5) Thanks [@Damsara](https://github.com/Damsara)! - Pruning pass: the brief-section mapping and brief output path now live only in the Design Brief Format (`ux-flow/references/flow-canon.md`); wrappers and Exit sections point there instead of restating them. Cut no-op justification prose from the grill rules.
+
 ## 0.1.0
 
 ### Minor Changes
