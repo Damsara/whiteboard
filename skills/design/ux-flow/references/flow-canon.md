@@ -95,4 +95,4 @@ Write briefs to `docs/design/<feature>-brief.md` with exactly these sections:
 5. **Decisions & citations** — every non-obvious decision as a `decision — principle` bullet.
 6. **Accessibility checklist** — the WCAG 2.2 hard gates, each checked or flagged.
 7. **Open questions** — anything deferred.
-Flow-only sessions write sections 1–3 + 5–7; UI-only sessions write 4–7.
+Full sessions write all 7 sections; flow-only sessions write sections 1–3 + 5–7; UI-only sessions write sections 4–7.
