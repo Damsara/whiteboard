@@ -6,7 +6,7 @@ Skills live under `skills/design/<name>/SKILL.md` (+ `references/` where the ski
 
 - Every `SKILL.md` has `name` (lowercase-hyphen, matching its folder) and a single-line `description` under 1536 chars.
 - **Disciplines** (`ux-flow`, `ui-craft`, `design-review`, `copy-craft`, `token-drift`) are model-invoked: no `disable-model-invocation`; the description is a routing rule with trigger phrases, one trigger per genuinely distinct branch.
-- **Wrappers** (`whiteboard-*`) and **tools** (`update-canon`, `setup-whiteboard`) are user-invoked: `disable-model-invocation: true`, human-facing one-line description. Wrapper bodies are ≤ 10 lines of pure orchestration — a wrapper that grows content is a bug; move the content into the discipline it wraps.
+- **Wrappers** (`whiteboard-*`) and **tools** (`update-canon`, `setup-whiteboard`, `ask-whiteboard`) are user-invoked: `disable-model-invocation: true`, human-facing one-line description. Wrapper bodies are ≤ 10 lines of pure orchestration — a wrapper that grows content is a bug; move the content into the discipline it wraps.
 - Which brief sections each session type writes, and where briefs are saved, is defined once — in the Design Brief Format in `ux-flow/references/flow-canon.md`. Wrappers and Exit sections point there; they never restate section numbers or paths.
 
 ## Canon rules
@@ -26,5 +26,6 @@ Skills live under `skills/design/<name>/SKILL.md` (+ `references/` where the ski
 ## Sync rules
 
 - Every promoted skill has a linked entry in the top-level `README.md`, grouped under User-invoked / Model-invoked, kept current on add/rename/remove.
+- `ask-whiteboard` is the router over every skill. Whenever a skill is added, renamed, removed, or changes what it's for, re-sync the router's map — a router that lies is worse than none.
 - Every behaviour-changing branch adds a changeset (`npx changeset`; package `whiteboard-skills`): patch = wording/pruning, minor = new skill or new rung, major = removed or renamed skill.
 - Releasing: `GITHUB_TOKEN=$(gh auth token) npx changeset version`, commit, `git tag v<version>`, `gh release create v<version>` with the new CHANGELOG section as notes. Installed users then pick up the release via `npx skills update`.
