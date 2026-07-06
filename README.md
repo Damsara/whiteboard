@@ -2,10 +2,6 @@
 
 [![skills.sh](https://skills.sh/b/Damsara/whiteboard)](https://skills.sh/Damsara/whiteboard)
 
-```bash
-npx skills@latest add Damsara/whiteboard
-```
-
 **AI can generate any UI in seconds — which is exactly why it generates the wrong one.**
 
 The failure mode of AI-built products isn't bad CSS. It's building the wrong screen: flows nobody agreed on, steps that serve the system instead of the user, and interfaces that look like every other generated interface. whiteboard fixes this the way a good design lead does — by pulling you to the whiteboard *before* anything gets built and asking the hard questions, one at a time.
@@ -13,6 +9,20 @@ The failure mode of AI-built products isn't bad CSS. It's building the wrong scr
 Every question cites its principle. Every session ends in a design brief you can build from.
 
 > ui-ux-pro-max gives you 161 palettes; **whiteboard makes sure you're building the right screen first.**
+
+## Install (30 seconds)
+
+1. Run the installer and pick your coding agent — works with Claude Code, Cursor, Codex, and 70+ others:
+
+   ```bash
+   npx skills@latest add Damsara/whiteboard
+   ```
+
+2. When it asks which skills you want, **take all of them**. They're small, and `design-review` and `token-drift` read `ux-flow`'s and `ui-craft`'s files, so they need those installed alongside.
+
+3. In your agent, type `/whiteboard-me` and describe what you're building. That's it.
+
+Unsure which skill fits a situation later? Type `/ask-whiteboard` and it points you at the right one.
 
 ## What a session looks like
 
@@ -26,22 +36,35 @@ Every question cites its principle. Every session ends in a design brief you can
 
 Twenty minutes of this, and the brief that comes out the other end has your flow map, every screen's empty/loading/error/success states, a locked token system in light+dark pairs, and a WCAG 2.2 checklist — with the reasoning cited on every line.
 
-## User-invoked skills
+## Which skill do I use?
 
-- **[/ask-whiteboard](./skills/design/ask-whiteboard/SKILL.md)** — not sure which skill fits? The router: asks where you are, points you at the right session.
-- **[/whiteboard-me](./skills/design/whiteboard-me/SKILL.md)** — the full kickoff: UX-flow interrogation, then visual direction, then the design brief.
-- **[/whiteboard-flow](./skills/design/whiteboard-flow/SKILL.md)** — flow only: screens, steps, states, errors.
-- **[/whiteboard-ui](./skills/design/whiteboard-ui/SKILL.md)** — visual direction only: hierarchy, spacing, type, color tokens.
-- **[/update-canon](./skills/design/update-canon/SKILL.md)** — maintainer tool: refresh the distilled canon from its vetted sources.
-- **[/setup-whiteboard](./skills/design/setup-whiteboard/SKILL.md)** — optional one-time repo config: docs home, platforms, WCAG target, token source.
+Skills starting with `/` are ones you type. The rest fire automatically when your agent recognizes the situation — though you can type those too.
 
-## Model-invoked skills
+**Starting something new** — design it before any code gets generated:
 
-- **[ux-flow](./skills/design/ux-flow/SKILL.md)** — the flow-interrogation discipline. Triggers when you start designing a feature or are about to generate UI without an agreed flow.
-- **[ui-craft](./skills/design/ui-craft/SKILL.md)** — the visual-direction discipline. Triggers when you're styling UI without an agreed system.
-- **[design-review](./skills/design/design-review/SKILL.md)** — the retrospective counterpart: a principles-cited audit of existing UI, from excise hunt to the WCAG hard-gates table, with severity-ranked findings. Requires `ux-flow` and `ui-craft` installed — it reads their canon.
-- **[copy-craft](./skills/design/copy-craft/SKILL.md)** — microcopy interrogation: labels, errors, empty states, and confirmations rewritten against a cited UX-writing canon.
-- **[token-drift](./skills/design/token-drift/SKILL.md)** — design-system violation scanner: raw hex, off-scale spacing, rogue radii and shadows, reported against the repo's locked token truth. Requires `ui-craft` installed.
+| Skill | Use it for |
+|---|---|
+| [/whiteboard-me](./skills/design/whiteboard-me/SKILL.md) | The full kickoff: flow questions, then visual direction, ending in a design brief you can build from. |
+| [/whiteboard-flow](./skills/design/whiteboard-flow/SKILL.md) | Flow only: screens, steps, and every state — empty, loading, error, success. |
+| [/whiteboard-ui](./skills/design/whiteboard-ui/SKILL.md) | Visual direction only: hierarchy, spacing, type, and color tokens in light+dark pairs. |
+| [ux-flow](./skills/design/ux-flow/SKILL.md) | The flow-interrogation engine behind the above — fires on its own when you start designing a feature without an agreed flow. |
+| [ui-craft](./skills/design/ui-craft/SKILL.md) | The visual-direction engine — fires when UI is about to be styled without an agreed system. |
+
+**Something exists and feels wrong** — audit it:
+
+| Skill | Use it for |
+|---|---|
+| [design-review](./skills/design/design-review/SKILL.md) | "Why does this feel off?" — a cited audit of existing screens: flow, states, hierarchy, and a WCAG 2.2 pass, with findings ranked blocker → polish. |
+| [copy-craft](./skills/design/copy-craft/SKILL.md) | The words: button labels, error messages, empty states, confirmations — every rewrite shown with its reasoning. |
+| [token-drift](./skills/design/token-drift/SKILL.md) | The code drifted from the design system: hardcoded colors, off-scale spacing, one-off shadows — each found and mapped to its nearest token. |
+
+**Utilities:**
+
+| Skill | Use it for |
+|---|---|
+| [/ask-whiteboard](./skills/design/ask-whiteboard/SKILL.md) | Not sure which of the above fits? This routes you. |
+| [/setup-whiteboard](./skills/design/setup-whiteboard/SKILL.md) | Optional, once per repo: where briefs live, platforms, WCAG target, token source. Everything works without it. |
+| [/update-canon](./skills/design/update-canon/SKILL.md) | Maintainer tool: refresh the distilled design canon from its vetted sources. |
 
 ## Where the questions come from
 
