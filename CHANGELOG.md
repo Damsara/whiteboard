@@ -1,5 +1,13 @@
 # whiteboard-skills
 
+## 0.5.0
+
+### Minor Changes
+
+- [#11](https://github.com/Damsara/whiteboard/pull/11) [`79cfc6a`](https://github.com/Damsara/whiteboard/commit/79cfc6a86defc84d9bc0ee100b95da543b6bcdea) Thanks [@Damsara](https://github.com/Damsara)! - One-word install: `npx whiteboard-skills`. The package now ships a bin that delegates to the skills.sh installer against `Damsara/whiteboard`, forwarding any flags (`--list`, `--skill`, `--agent`). The standard `npx skills@latest add Damsara/whiteboard` form still works and is documented as the from-source alternative.
+
+- [#10](https://github.com/Damsara/whiteboard/pull/10) [`85cf706`](https://github.com/Damsara/whiteboard/commit/85cf706deb51a526787227d97bb82af19c70e3b6) Thanks [@Damsara](https://github.com/Damsara)! - `ui-craft` now exits with a rendered style guide, not just a token table. The locked system is written as a self-contained HTML page beside the brief — color swatches, type scale at real sizes, spacing bars, radius/elevation on a sample card, light/dark toggle — so the confirmation gate is judged by eye, not by hex code. In environments that support publishing artifacts (Claude Code, Pro+ plans) the page is also published as a private shareable link; everywhere else the local file opens in any browser.
+
 ## 0.4.0
 
 ### Minor Changes
