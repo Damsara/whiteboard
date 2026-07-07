@@ -27,4 +27,6 @@ Same as a `ux-flow` session: one question at a time, each with a recommended ans
 
 ## Exit
 
-Restate the locked system as a token decision table (role → light value → dark value; scales as lists) plus the one distinctive move, and get explicit confirmation. In a full `/whiteboard-me` session, proceed to the brief; in a UI-only session, write the UI-only brief per the Design Brief Format in `ux-flow/references/flow-canon.md`.
+Restate the locked system as a token decision table (role → light value → dark value; scales as lists) plus the one distinctive move. Then render it so the user judges the system by eye, not by hex code: write a fully self-contained HTML style guide (inline CSS/JS only — no external requests) as `<feature>-style-guide.html` beside the brief — color roles as swatches, the type scale at real sizes, spacing as bars, radius and elevation on a sample card, with a light/dark toggle showing both halves of every pair. Where the environment can publish the page as a shareable artifact, publish it and share the link; otherwise the local file opens in any browser.
+
+Get explicit confirmation on the rendered system. Then: in a full `/whiteboard-me` session, proceed to the brief; in a UI-only session, write the UI-only brief per the Design Brief Format in `ux-flow/references/flow-canon.md`.
