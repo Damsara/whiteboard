@@ -1,13 +1,18 @@
 {
   "name": "whiteboard-skills",
   "version": "0.4.0",
-  "private": true,
-  "description": "whiteboard — design-kickoff interrogation skills for coding agents",
+  "description": "whiteboard — design-kickoff interrogation skills for coding agents. Runs the skills.sh installer against Damsara/whiteboard.",
   "repository": {
     "type": "git",
     "url": "https://github.com/Damsara/whiteboard"
   },
   "license": "MIT",
+  "bin": {
+    "whiteboard-skills": "bin/whiteboard-skills.js"
+  },
+  "files": [
+    "bin"
+  ],
   "scripts": {
     "changeset": "changeset",
     "version": "changeset version"
