@@ -15,8 +15,10 @@ Every question cites its principle. Every session ends in a design brief you can
 1. Run the installer and pick your coding agent — works with Claude Code, Cursor, Codex, and 70+ others:
 
    ```bash
-   npx skills@latest add Damsara/whiteboard
+   npx whiteboard-skills
    ```
+
+   (Equivalent to `npx skills@latest add Damsara/whiteboard` — use that form if you prefer installing straight from the source repo.)
 
 2. When it asks which skills you want, **take all of them**. They're small, and `design-review` and `token-drift` read `ux-flow`'s and `ui-craft`'s files, so they need those installed alongside.
 
