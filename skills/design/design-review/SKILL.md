@@ -5,7 +5,7 @@ description: Audit an existing screen, flow, or component against the whiteboard
 
 # Design Review
 
-The retrospective counterpart to `ux-flow` and `ui-craft`: those interrogate before anything is built; this audits what already exists. Requires both installed — read `../ux-flow/references/flow-canon.md`, `../ux-flow/references/modern-ux.md`, and `../ui-craft/references/ui-canon.md` in full before auditing. If `docs/design/whiteboard-setup.md` exists, read it too.
+The retrospective counterpart to `ux-flow` and `ui-craft`: those interrogate before anything is built; this audits what already exists. Requires both installed — read `../ux-flow/references/flow-canon.md`, `../ux-flow/references/modern-ux.md`, `../ux-flow/references/gates.md`, and `../ui-craft/references/ui-canon.md` in full before auditing. If `docs/design/whiteboard-setup.md` exists, read it too.
 
 ## Scope first
 
@@ -20,11 +20,11 @@ Establish from the codebase, or by asking one question at a time:
 Walk in order; earlier sweeps often explain later findings.
 
 1. **Flow** — challenge each step's right to exist; hunt excise (taps, dialogs, re-entry serving the system's bookkeeping, not the user's goal); check both gulfs per screen: can they tell what to do, and tell what happened? (Cooper: excise; Norman: two gulfs; Tesler's Law; WCAG 3.3.7 Redundant Entry.)
-2. **States** — every screen: empty, loading, error, success all designed? Empty states carry a CTA; loading covered by skeleton or optimistic UI, no bare spinner past 1s. (Refactoring UI: empty states are a feature; Doherty <400ms; INP <200ms.)
+2. **States** — every screen: empty, loading, error, success all designed? Empty states carry a CTA; loading covered by skeleton or optimistic UI and the shared performance gates. (Refactoring UI: empty states are a feature.)
 3. **Errors** — plain language, precise problem, constructive fix; reversible over confirmed; never blaming. (Nielsen #5/#9; Norman: slips vs mistakes.)
 4. **Hierarchy & emphasis** — exactly one primary action per screen; hierarchy via weight and color, not size alone; spacing does the grouping before borders; diagnose "looks off" in order: spacing → alignment → contrast → color. (Refactoring UI; Von Restorff; Proximity.)
 5. **Token discipline** — raw hex in components, off-scale spacing, one-off radii or shadows: each is a finding. Dark mode designed in pairs, never inverted. (M3 tokens; shadcn norm.)
-6. **Hard gates** — walk the table under `## Hard Gates` in `ui-canon.md`; every row gets an explicit pass/fail verdict. Gates are non-negotiable: flag violations and propose the nearest compliant alternative.
+6. **Hard gates** — walk every row in `../ux-flow/references/gates.md`; every row gets an explicit pass/fail verdict. Gates are non-negotiable: flag violations and propose the nearest compliant alternative.
 7. **AI-product sweep** (only if the surface involves AI) — modality fit, streaming states, regenerate/undo/citations for probabilistic output, escape hatches from open input, agentic transparency. (modern-ux.md.)
 
 ## Findings

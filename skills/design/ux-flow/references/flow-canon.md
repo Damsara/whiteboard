@@ -56,7 +56,7 @@
 - **Hick's Law** — decision time grows with the number and complexity of choices; trim options, break tasks into steps, highlight a recommended choice.
 - **Jakob's Law** — users expect your product to work like everything else they already use; default to convention, spend novelty sparingly.
 - **Miller's Law** — working memory holds about 7±2 items; chunk content, but don't use this to justify arbitrary limits.
-- **Doherty Threshold** — keep response time under 400ms, or cover latency with perceived-performance techniques (skeletons, optimistic UI, progress).
+- **Doherty Threshold** — keep response time under the shared performance gate, or cover latency with perceived-performance techniques (skeletons, optimistic UI, progress). (See `gates.md`.)
 - **Tesler's Law** — complexity can't be eliminated, only moved; the system absorbs it (smart defaults, inference), never the user.
 - **Postel's Law** — be liberal in what you accept from users (input formats, typos) and conservative in what you emit back.
 - **Occam's Razor** — among equally good designs, ship the one with the fewest assumptions and elements.

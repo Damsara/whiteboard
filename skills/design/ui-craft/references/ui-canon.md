@@ -56,13 +56,5 @@
 - **Dark mode designed in pairs** — every palette decision made for light and dark together from the start; never a simple inversion filter.
 
 ## Hard Gates (WCAG 2.2 AA + platform floors)
-| Gate | Number | Source |
-|---|---|---|
-| Text contrast | ≥ 4.5:1 (≥ 3:1 for large: ≥24px or 19px bold) | WCAG 1.4.3 |
-| Non-text contrast (icons, borders, focus) | ≥ 3:1 | WCAG 1.4.11 |
-| Target size | ≥ 24×24 CSS px floor; 44pt (HIG) / 48dp (M3) on touch | WCAG 2.5.8 / HIG / M3 |
-| Focus | visible and not obscured by sticky UI | WCAG 2.4.7 / 2.4.11 |
-| Color | never the only carrier of meaning | WCAG 1.4.1 |
-| Reflow | survives 200% text zoom and 320px width | WCAG 1.4.4 / 1.4.10 |
-| Keyboard | everything operable; errors named in text with a fix | WCAG 2.1.1 / 3.3.1 / 3.3.3 |
-| Motion | 150–300ms, meaningful, honors prefers-reduced-motion | M3 / HIG / WCAG 2.3.3 |
+
+Use the shared accessibility, performance, and motion table in `../../ux-flow/references/gates.md`. It is the single source of truth; this canon supplies the visual interpretation of those gates.

@@ -12,7 +12,7 @@ Skills live under `skills/design/<name>/SKILL.md` (+ `references/` where the ski
 ## Canon rules
 
 - Every `references/*.md` opens with `> canon-version: YYYY-MM` plus a one-line purpose. All reference files carry the same stamp; `update-canon` is the only skill that changes it.
-- Hard numbers must agree everywhere they appear: text contrast 4.5:1 (3:1 large ≥24px or 19px bold); non-text 3:1; targets ≥24×24 CSS px floor, 44pt (HIG) / 48dp (M3) touch; INP < 200ms; Doherty < 400ms; motion 150–300ms honoring prefers-reduced-motion. Changing one is a canon update: change every occurrence and the stamp together.
+- Hard numbers live in `ux-flow/references/gates.md`; every discipline points there. Changing one is a canon update: change that file and its stamp together.
 - Distilled principles are paraphrased with attribution — never verbatim book excerpts.
 - Every reference file is reachable from `update-canon/references/sources.md`'s Feeds column; a new reference file means a new Feeds mapping.
 
@@ -27,5 +27,5 @@ Skills live under `skills/design/<name>/SKILL.md` (+ `references/` where the ski
 
 - Every promoted skill has a linked entry in the top-level `README.md`'s "Which skill do I use?" tables, grouped by situation (starting new / something feels wrong / utilities), kept current on add/rename/remove. Typed skills carry the `/` prefix; auto-firing ones don't.
 - `ask-whiteboard` is the router over every skill. Whenever a skill is added, renamed, removed, or changes what it's for, re-sync the router's map — a router that lies is worse than none.
-- Every behaviour-changing branch adds a changeset (`npx changeset`; package `whiteboard-skills`): patch = wording/pruning, minor = new skill or new rung, major = removed or renamed skill.
-- Releasing: `GITHUB_TOKEN=$(gh auth token) npx changeset version`, commit, `git tag v<version>`, `gh release create v<version>` with the new CHANGELOG section as notes, then `npm publish` (the package doubles as the `npx whiteboard-skills` installer wrapper — publishing keeps its version in step). Installed users then pick up the release via `npx skills update`.
+- Every behaviour-changing branch adds a changeset (`pnpm changeset`; package `whiteboard-skills`): patch = wording/pruning, minor = new skill or new rung, major = removed or renamed skill.
+- Releasing: `GITHUB_TOKEN=$(gh auth token) pnpm changeset version`, commit, `git tag v<version>`, `gh release create v<version>` with the new CHANGELOG section as notes, then `npm publish` (the package doubles as the `npx whiteboard-skills` installer wrapper — publishing keeps its version in step). Installed users then pick up the release via `npx skills update`.

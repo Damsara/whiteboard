@@ -5,7 +5,7 @@ description: Interrogate the user about visual direction, then lock a clean UI s
 
 # UI Craft Interrogation
 
-Read `references/ui-canon.md` in full before asking anything. If `docs/design/whiteboard-setup.md` exists, read it too.
+Read `references/ui-canon.md` and `../ux-flow/references/gates.md` in full before asking anything. If `docs/design/whiteboard-setup.md` exists, read it too.
 
 ## Grill rules
 
@@ -21,9 +21,9 @@ Same as a `ux-flow` session: one question at a time, each with a recommended ans
    - Type scale with roles (display/headline/body/label sizes from a fixed scale; 45–75ch line length). (Refactoring UI; M3 type roles.)
    - Color as token roles in light+dark pairs — background/foreground, surface/on-surface, primary, muted, destructive; restrained palette; shades shift hue/saturation with lightness; never raw hex in components. (M3 tokens; shadcn norm; Refactoring UI shade systems.)
    - Radius + elevation scales; shadow means elevation, elevation means something. (Refactoring UI; M3 state layers.)
-   - Motion: 150–300ms, physics-feel, honors prefers-reduced-motion. (M3/HIG.)
+   - Motion follows the shared motion gate, feels physical, and remains interruptible. (See `../ux-flow/references/gates.md`.)
 4. **Emphasis audit** — exactly one primary action per screen (Von Restorff); emphasize by de-emphasizing competitors; group with spacing before borders (Proximity; Common Region).
-5. **Hard gates** — state, don't ask: the table under `## Hard Gates (WCAG 2.2 AA + platform floors)` in `references/ui-canon.md` is non-negotiable; flag any locked decision that violates it and propose the nearest compliant alternative.
+5. **Hard gates** — state, don't ask: the shared table in `../ux-flow/references/gates.md` is non-negotiable; flag any locked decision that violates it and propose the nearest compliant alternative.
 
 ## Exit
 

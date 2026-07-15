@@ -26,6 +26,17 @@ Every question cites its principle. Every session ends in a design brief you can
 
 Unsure which skill fits a situation later? Type `/ask-whiteboard` and it points you at the right one.
 
+## Development
+
+The repository uses pnpm. From a fresh checkout:
+
+```bash
+pnpm install --frozen-lockfile
+pnpm validate
+pnpm test
+pnpm package:check
+```
+
 ## What a session looks like
 
 > **You:** /whiteboard-me — add checkout to the app

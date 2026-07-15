@@ -5,7 +5,7 @@ description: Interrogate the user about a product or feature's UX flow before an
 
 # UX Flow Interrogation
 
-Read `references/flow-canon.md` and `references/modern-ux.md` in full before asking anything. If `docs/design/whiteboard-setup.md` exists, read it too.
+Read `references/flow-canon.md`, `references/modern-ux.md`, and `references/gates.md` in full before asking anything. If `docs/design/whiteboard-setup.md` exists, read it too.
 
 ## Grill rules
 
@@ -23,7 +23,7 @@ Walk in order. Skip any rung the user has already answered; never skip the fewes
 2. **Entry points & context** — how do users arrive; what do they already know or have that the flow must not re-ask. (Recognition over recall; context architecture.)
 3. **Step inventory** — enumerate candidate steps/screens; challenge each step's right to exist. (Cooper: the best interaction is eliminated; Hick's Law.)
 4. **Norman's two gulfs, per step** — can the user tell what to do here? Can they tell what happened after acting? (Gulf of execution/evaluation; signifiers; feedback.)
-5. **States per step** — empty, loading, error, success. Empty states get a CTA; loading gets skeleton/optimistic cover. (Refactoring UI: empty states are a feature; Doherty <400ms; INP <200ms.)
+5. **States per step** — empty, loading, error, success. Empty states get a CTA; loading gets skeleton/optimistic cover. (Refactoring UI: empty states are a feature; shared performance gates.)
 6. **Errors** — prevent over message; slips vs mistakes; reversible over confirmed; recovery in plain language with the fix. (Nielsen #5/#9; Norman; Cooper: do, don't ask.)
 7. **Fewest-steps audit** — for every surviving step: does it serve the user or the system? Kill excise; never re-ask known information; progressive disclosure; smart defaults. (Cooper: excise; WCAG 3.3.7; Tesler's Law.)
 8. **AI-product rungs** (only if the feature involves AI) — is chat actually the right modality? Streaming states queued→thinking→streaming→done→failed; regenerate/undo/citations for probabilistic output; escape hatches from open input; agentic transparency. (modern-ux.md.)
