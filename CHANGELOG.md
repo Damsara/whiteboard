@@ -1,5 +1,15 @@
 # whiteboard-skills
 
+## 0.6.0
+
+### Minor Changes
+
+- [`9769751`](https://github.com/Damsara/whiteboard/commit/97697510c5b77c9907949e59289490dc1f5b1671) Thanks [@Damasu007](https://github.com/Damasu007)! - Add a complete Laws of UX application matrix and route relevant principles through each design discipline.
+
+### Patch Changes
+
+- [`28fef4e`](https://github.com/Damsara/whiteboard/commit/28fef4ec4809dcc020451034c81bd1fbcc45bc2f) Thanks [@Damasu007](https://github.com/Damasu007)! - Make pnpm the canonical repository package manager and add automated guardrails for skill contracts, canon references, packaging, and release metadata.
+
 ## 0.5.0
 
 ### Minor Changes
