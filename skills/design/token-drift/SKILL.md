@@ -5,7 +5,7 @@ description: Scan a codebase for design-system violations — raw hex, off-scale
 
 # Token Drift
 
-Read `../ui-craft/references/ui-canon.md` in full before scanning (requires `ui-craft` installed). If `docs/design/whiteboard-setup.md` exists, read it too.
+Read `../ui-craft/references/ui-canon.md` and `../ux-flow/references/principle-map.md` in full before scanning (requires `ui-craft` installed). If `docs/design/whiteboard-setup.md` exists, read it too.
 
 ## Establish the truth
 
@@ -27,7 +27,8 @@ Scan every UI source file in scope. Each of these is a finding:
 4. **One-off radii and shadows** — radius or shadow values not from the scales; nested corners that don't share a center. (Elevation is a fixed scale; concentric radii.)
 5. **Unpaired dark mode** — values defined for light only, or dark derived by inversion instead of a designed pair. (Dark mode designed in pairs.)
 6. **State drift** — hover/focus/press styles hand-rolled per component instead of the system's state layer. (State layers, not hand-rolled states.)
+7. **Principle fit** — when a token finding changes grouping, salience, target reachability, or interpretation, cite the matching law from `principle-map.md` (for example Proximity, Similarity, Common Region, Uniform Connectedness, Prägnanz, Selective Attention, Von Restorff, or Aesthetic-Usability); do not turn every token mismatch into a UX-law violation.
 
 ## Exit
 
-Write the report to `<docs home>/token-drift-report.md`: the confirmed truth table, then a findings table — `file:line | current value | nearest token | rule` — grouped by sweep. Every scanned directory is listed; anything skipped appears under "Not scanned", never silently dropped. Offer to apply the substitutions, largest cluster first; change nothing without approval.
+Write the report to `<docs home>/token-drift-report.md`: the confirmed truth table, then a findings table — `file:line | current value | nearest token | rule | principle when applicable` — grouped by sweep. Every scanned directory is listed; anything skipped appears under "Not scanned", never silently dropped. Offer to apply the substitutions, largest cluster first; change nothing without approval.

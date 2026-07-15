@@ -87,6 +87,8 @@ Norman — *The Design of Everyday Things* · Nielsen — *10 Usability Heuristi
 
 …plus a modern layer that most design resources don't have yet: AI-product UX patterns (streaming states, probabilistic output, agentic transparency), the EU Accessibility Act baseline, INP, and the 2025 expressive turn from both platform vendors.
 
+The 30 Laws of UX are defined in [`flow-canon.md`](./skills/design/ux-flow/references/flow-canon.md) and routed to the disciplines through the [principle application matrix](./skills/design/ux-flow/references/principle-map.md). Skills cite a law only when the relevant behavior is in scope, then produce the evidence or decision required by the matrix.
+
 **canon-version: 2026-07**
 
 ## Staying current

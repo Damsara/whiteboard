@@ -18,5 +18,6 @@
 | aiverse.design | https://www.aiverse.design/ | AI product design playbook | modern-ux.md |
 | Growth.Design psychology list | https://growth.design/psychology | 106 biases/principles | modern-ux.md |
 | Growth.Design case studies | https://growth.design/case-studies | Applied flow teardowns | modern-ux.md |
+| Laws of UX | https://lawsofux.com/ | 30 UX principles and applied examples | flow-canon.md + principle-map.md |
 | shadcn/ui changelog | https://ui.shadcn.com/docs/changelog | Ecosystem/tokens/registry norms | ui-canon.md |
 | Vercel agent-skills FAQ/changelog | https://vercel.com/blog/agent-skills-explained-an-faq | Skills ecosystem changes | sources.md itself / repo docs |

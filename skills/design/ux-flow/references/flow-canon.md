@@ -52,6 +52,8 @@
 - **Treat input as sacred** — never destroy or reject user work; accept flexible input formats and silently normalize them.
 
 ## Laws of UX — behavioral & cognitive (Yablonski)
+
+The definitions below are the canon. Use `principle-map.md` for discipline ownership, triggers, and required evidence; do not force a citation when a law is out of scope.
 - **Fitts's Law** — time to hit a target is a function of distance and size; make primary actions big and close, keep related controls adjacent.
 - **Hick's Law** — decision time grows with the number and complexity of choices; trim options, break tasks into steps, highlight a recommended choice.
 - **Jakob's Law** — users expect your product to work like everything else they already use; default to convention, spend novelty sparingly.

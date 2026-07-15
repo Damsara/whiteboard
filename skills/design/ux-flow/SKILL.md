@@ -5,7 +5,7 @@ description: Interrogate the user about a product or feature's UX flow before an
 
 # UX Flow Interrogation
 
-Read `references/flow-canon.md`, `references/modern-ux.md`, and `references/gates.md` in full before asking anything. If `docs/design/whiteboard-setup.md` exists, read it too.
+Read `references/flow-canon.md`, `references/principle-map.md`, `references/modern-ux.md`, and `references/gates.md` in full before asking anything. If `docs/design/whiteboard-setup.md` exists, read it too.
 
 ## Grill rules
 
@@ -19,15 +19,16 @@ Read `references/flow-canon.md`, `references/modern-ux.md`, and `references/gate
 
 Walk in order. Skip any rung the user has already answered; never skip the fewest-steps audit.
 
-1. **Goal & persona** — what outcome is the user hiring this feature for; who is the one primary persona. (Cooper: goals not tasks; one primary persona.)
-2. **Entry points & context** — how do users arrive; what do they already know or have that the flow must not re-ask. (Recognition over recall; context architecture.)
-3. **Step inventory** — enumerate candidate steps/screens; challenge each step's right to exist. (Cooper: the best interaction is eliminated; Hick's Law.)
-4. **Norman's two gulfs, per step** — can the user tell what to do here? Can they tell what happened after acting? (Gulf of execution/evaluation; signifiers; feedback.)
-5. **States per step** — empty, loading, error, success. Empty states get a CTA; loading gets skeleton/optimistic cover. (Refactoring UI: empty states are a feature; shared performance gates.)
-6. **Errors** — prevent over message; slips vs mistakes; reversible over confirmed; recovery in plain language with the fix. (Nielsen #5/#9; Norman; Cooper: do, don't ask.)
-7. **Fewest-steps audit** — for every surviving step: does it serve the user or the system? Kill excise; never re-ask known information; progressive disclosure; smart defaults. (Cooper: excise; WCAG 3.3.7; Tesler's Law.)
+1. **Goal & persona** — what outcome is the user hiring this feature for; who is the one primary persona. (Cooper: goals not tasks; use Mental Model when the user's understanding may differ; name Cognitive Bias and run the ethics check when framing or motivation may distort the choice; use Pareto Principle when scope is constrained.)
+2. **Entry points & context** — how do users arrive; what do they already know or have that the flow must not re-ask. (Recognition over recall; apply Jakob's Law to convention changes, Working Memory to carried context, and Paradox of the Active User to onboarding.)
+3. **Step inventory** — enumerate candidate steps/screens; challenge each step's right to exist. (Cooper: the best interaction is eliminated; apply Hick's Law, Choice Overload, Cognitive Load, Miller's Law, Occam's Razor, or Parkinson's Law when choices, memory, complexity, or duration are present.)
+4. **Norman's two gulfs, per step** — can the user tell what to do here? Can they tell what happened after acting? (Gulf of execution/evaluation; apply Fitts's Law to controls, Mental Model to predictability, Uniform Connectedness to relationships, and Flow to challenge/feedback balance.)
+5. **States per step** — empty, loading, error, success. Empty states get a CTA; loading gets skeleton/optimistic cover; incomplete work gets a resume path. (Doherty Threshold; Goal-Gradient Effect; Zeigarnik Effect; Peak-End Rule.)
+6. **Errors** — prevent over message; slips vs mistakes; accept recoverable input; reversible over confirmed; recovery in plain language with the fix. (Postel's Law; Cognitive Bias; Working Memory; Nielsen #5/#9; Norman; Cooper: do, don't ask.)
+7. **Fewest-steps audit** — for every surviving step: does it serve the user or the system? Kill excise; never re-ask known information; progressive disclosure; smart defaults; prioritize the high-value path. (Cooper: excise; Tesler's Law; Occam's Razor; Pareto Principle; WCAG 3.3.7.)
 8. **AI-product rungs** (only if the feature involves AI) — is chat actually the right modality? Streaming states queued→thinking→streaming→done→failed; regenerate/undo/citations for probabilistic output; escape hatches from open input; agentic transparency. (modern-ux.md.)
-9. **Peak & end** — where is the emotional peak; what does success feel like. (Peak-End Rule.)
+9. **Peak & end** — where is the emotional peak; what does success feel like; which first/last actions must be memorable. (Peak-End Rule; Serial Position Effect.)
+10. **Principle fit sweep** — consult `references/principle-map.md`; record every triggered law in the brief's Decisions & citations section and mark laws with no trigger as not applicable. Never add a citation without a concrete flow decision.
 
 ## Exit
 
